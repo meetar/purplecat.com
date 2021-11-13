@@ -78,19 +78,30 @@ Stardew Valley
     <p>
     <a href="https://www.stardewvalley.net/">a farm vacation</a>
     </p>
+
+
+<p id="entercode">
+    <a onclick="helpfulpassword()">Adventure through Christmasland</a>
+</p>
+
 </div>
 
 </body>
 
 <script>
-    function demandpassword() {
-
+function demandpassword() {
     var password = prompt("ENTER PASSWORD");
-
-if (password == "hyruleminecraftland") {
-  window.location="secretjunastuff!!.html"
+    if (password == "hyruleminecraftland") {
+    window.location="secretjunastuff!!.html"
+    }
 }
 
+function helpfulpassword() {
+    var password = prompt("ENTER PASSWORD", "christmas");
+    if (password == "christmas") {
+    window.location="christmas.html"
     }
+}
+
 </script>
 </html>
